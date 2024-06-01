@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineMagic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-wraper">
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo-nav">
+                <div class="logo">
+                    <img src="./image/kandinsky-download-1716395055606 копия.png" alt="MineMagic Logo">
+                    <h1>MineMagic</h1>
+                </div>
+    
+                <button class="header__burger-btn" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+    
+                <nav class="menu" id="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="./index.html">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./Players.html">
+                                Игроки
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./about.html">
+                                Устав
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./Forum.html">
+                                Форум
+                            </a>
+                        </li>
+                    </ul>
+                    <img class="menu__image" src="./image/menu-image.png" alt="Temporary Image">
+                </nav>            
+            </div>
+           
+            <button class="contact-button" id="contactButton">Связь с нами</button>
+        </div>
+    </header>
+    <main>
+        <section id="content">
+            <div class="home-section">
+                <div class="home-text">
+                    <h2>Идеальный сервер для выживания с друзьями!</h2>
+                    <p>Добро пожаловать на MineMagic! Наш сервер предлагает уникальные возможности для выживания, множество интересных квестов и событий. Присоединяйтесь к нам и начните свое приключение уже сегодня!</p>
+                    <button class="join-button" id="joinButton"><span>Присоединиться</span></button>
+                </div>
+                <div class="home-image">
+                    <img src="./image/image-7.png" alt="Temporary Image">
+                </div>
+            </div>
+            
+            <div class="server-image">
+                <img src="./image/images-1.png" alt="Temporary Image">
+            </div>
+            
+            <div class="theme">
+                <h2>О сервере</h2>
+                <p id="text2">Добро пожаловать на MineMagic – мир волшебства, приключений и бесконечных возможностей! Наш сервер Minecraft создан для тех, кто ищет уникальный опыт выживания и стремится исследовать захватывающий мир, наполненный магией и таинственными существами. На MineMagic вас ждут многочисленные квесты, которые погружают вас в мир магии и волшебства. Отправляйтесь в путешествие по древним подземельям, исследуйте заброшенные замки и сражайтесь с мифическими существами. Каждый квест разработан с уникальными задачами и головоломками, которые заставят вас использовать всю вашу смекалку и навыки выживания.</p>
+                <button id="button2" onclick="toggleText('text2', 'continuation2', 'button2')">Продолжить</button>
+            </div>
+        </section>
+        
+        <div class="main-container">
+        </div>
+
+        <div class="additional-section">
+        </div>
+        <div class="additional-section">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MineMagic. All rights reserved.</p>
+    </footer>
+
+    <!-- Модальное окно для связи -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('contactModal')">&times;</span>
+            <img src="./image/contach.png" alt="Temporary Icon" class="modal-icon">
+            <div class="copy-container">
+                <p>Наш Discord</p>
+                <button class="copy-button" onclick="copyText('https://discord.gg/gsBkUndN')">Скопировать</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для присоединения -->
+    <div id="joinModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('joinModal')">&times;</span>
+            <img src="./image/Play.com.png" alt="Temporary Icon" class="modal-icon">
+            <div class="copy-container">
+                <p>IP сервера</p>
+                <button class="copy-button" onclick="copyText('minemagic.mc-join.ru:28842')">Скопировать</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

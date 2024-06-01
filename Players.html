@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игроки - MineMagic</title>
+    <link rel="stylesheet" href="Players.css">
+</head>
+<body class="body-wraper">
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo-nav">
+                <div class="logo">
+                    <img src="./image/kandinsky-download-1716395055606 копия.png" alt="MineMagic Logo">
+                    <h1>MineMagic</h1>
+                </div>
+
+                <button class="header__burger-btn" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <nav class="menu" id="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="index.html">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="Players.html">
+                                Игроки
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="about.html">
+                                Устав
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./Forum.html">
+                                Форум
+                            </a>
+                        </li>
+                    </ul>
+                    <img class="menu__image" src="./image/menu-image.png" alt="Menu Image">
+                </nav>            
+            </div>
+           
+            <button class="contact-button" id="contactButton">Связь с нами</button>
+        </div>
+    </header>
+    <main>
+        <section id="players-content">
+            <div class="players-section">
+                <img class="player-image" src="./image/image-6.png" alt="Player Image">
+                <h2>Список активных игроков</h2>
+                <hr>
+                <div class="player-card">
+                    <span class="player-name">Bay777</span>
+                    <img src="./image/img-1.png" alt="Player Icon">
+                </div>
+                <div class="player-card">
+                    <span class="player-name">Baysky</span>
+                    <img src="./image/img-1.png" alt="Player Icon">
+                </div>
+                <div class="player-card">
+                    <span class="player-name">Mek002</span>
+                    <img src="./image/img-2.png" alt="Player Icon">
+                </div>
+                <div class="player-card">
+                    <span class="player-name">Beka</span>
+                    <img src="./image/png-3.png" alt="Player Icon">
+                </div>
+                <div class="player-card">
+                    <span class="player-name">Ali_Himik</span>
+                    <img src="./image/png-3.png" alt="Player Icon">
+                </div>
+                <div class="player-card">
+                    <span class="player-name">mizhkcute</span>
+                    <img src="./image/img-4.png" alt="Player Icon">
+                </div>
+                <div class="player-card">
+                    <span class="player-name">DROBOVIKTOR</span>
+                    <img src="./image/img-4.png" alt="Player Icon">
+                </div>
+                <div class="player-card">
+                    <span class="player-name">bqxabsolute</span>
+                    <img src="./image/img-4.png" alt="Player Icon">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MineMagic. All rights reserved.</p>
+    </footer>
+    <!-- Модальное окно для связи -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('contactModal')">&times;</span>
+            <img src="./image/contach.png" alt="Temporary Icon" class="modal-icon">
+            <div class="copy-container">
+                <p>Наш Discord</p>
+                <button class="copy-button" onclick="copyText('https://discord.gg/gsBkUndN')">Скопировать</button>
+            </div>
+        </div>
+    </div>
+    <script src="./about.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форум - MineMagic</title>
+    <link rel="stylesheet" href="./Forum.css">
+</head>
+<body class="body-wraper">
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo-nav">
+                <div class="logo">
+                    <img src="./image/kandinsky-download-1716395055606 копия.png" alt="MineMagic Logo">
+                    <h1>MineMagic</h1>
+                </div>
+    
+                <button class="header__burger-btn" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+    
+                <nav class="menu" id="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="./index.html">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./Players.html">
+                                Игроки
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./about.html">
+                                Устав
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./forum.html">
+                                Форум
+                            </a>
+                        </li>
+                    </ul>
+                    <img class="menu__image" src="./image/menu-image.png" alt="Temporary Image">
+                </nav>            
+            </div>
+           
+            <button class="contact-button" id="contactButton">Связь с нами</button>
+        </div>
+    </header>
+    <main>
+        <section id="content">
+            <div class="forum-section">
+                <img class="forum-img" src="./image/Prv.com.png" alt="Temporary Header Image">
+                <h2>Жалобы</h2>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Введите номер или название жалобы...">
+                    <button class="search-button" onclick="searchComplaint()">
+                        <img src="./image/input.png" alt="Search Icon">
+                    </button>
+                </div>
+                <ul class="complaint-list" id="complaintList">
+                    <li id="complaint1"><strong>Жалоба #1:</strong> Гриферство на базе |<img src="./image/Frm-img.jpg" alt="Temporary Icon"></li>
+                    <li id="complaint2"><strong>Жалоба #2:</strong> Использование читов |<img src="./image/Frm-img.jpg" alt="Temporary Icon"></li>
+                    <li id="complaint3"><strong>Жалоба #3:</strong> Оскорбительное поведение в чате |<img src="./image/Frm-img.jpg" alt="Temporary Icon"></li>
+                    <li id="complaint4"><strong>Жалоба #4:</strong> Незаконное строительство |<img src="./image/Frm-img.jpg" alt="Temporary Icon"></li>
+                    <li id="complaint5"><strong>Жалоба #5:</strong> Спам в чате |<img src="./image/Frm-img.jpg" alt="Temporary Icon"></li>
+                    <li id="complaint6"><strong>Жалоба #6:</strong> Мошенничество при обмене |<img src="./image/Frm-img.jpg" alt="Temporary Icon"></li>
+                    <li id="complaint7"><strong>Жалоба #7:</strong> Неуважение к администрации |<img src="./image/Frm-img.jpg" alt="Temporary Icon"></li>
+                    <li id="complaint8"><strong>Жалоба #8:</strong> Разрушение публичных построек |<img src="./image/Frm-img.jpg" alt="Temporary Icon"></li>
+                    <li id="complaint9"><strong>Жалоба #9:</strong> Незаконное использование модов |<img src="./image/Frm-img.jpg" alt="Temporary Icon"></li>
+                    <li id="complaint10"><strong>Жалоба #10:</strong> Оскорбления по национальному признаку |<img src="./image/Frm-img.jpg" alt="Temporary Icon"></li>
+                </ul>
+                <div id="noResults" class="no-results">
+                    <img src="./image/NoN.png" alt="Temporary Icon">
+                    <p>Ничего не было найдено</p>
+                   
+                    <button class="back-button" onclick="resetSearch()">Вернуться назад</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MineMagic. All rights reserved.</p>
+    </footer>
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('contactModal')">&times;</span>
+            <img src="./image/contach.png" alt="Temporary Icon" class="modal-icon">
+            <div class="copy-container">
+                <p>Наш Discord</p>
+                <button class="copy-button" onclick="copyText('https://discord.gg/gsBkUndN')">Скопировать</button>
+            </div>
+        </div>
+    </div>
+    <script src="./Forum.js"></script>
+</body>
+</html>

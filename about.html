@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Устав-MineMagic</title>
+    <link rel="stylesheet" href="./about.css">
+</head>
+<body class="body-wraper">
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo-nav">
+                <div class="logo">
+                    <img src="./image/kandinsky-download-1716395055606 копия.png" alt="MineMagic Logo">
+                    <h1>MineMagic</h1>
+                </div>
+    
+                <button class="header__burger-btn" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+    
+                <nav class="menu" id="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="./index.html">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./Players.html">
+                                Игроки
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./about.html">
+                                Устав
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./Forum.html">
+                                Форум
+                            </a>
+                        </li>
+                    </ul>
+                    <img class="menu__image" src="./image/menu-image.png" alt="Temporary Image">
+                </nav>            
+            </div>
+           
+            <button class="contact-button" id="contactButton">Связь с нами</button>
+        </div>
+    </header>
+    <main>
+        <section id="content">   
+            <!-- Ustav image above the "Устав" section -->
+            <div class="ustav-image">
+                <img src="./image/Ustav копия.png" alt="UstavImage">
+            </div>
+            
+            <div class="theme">
+                <h2>Устав</h2>
+                <p id="text3">Мы уделяем особое внимание безопасности и комфортному игровому опыту для всех участников. Наши правила направлены на создание дружелюбной и уважительной атмосферы. Запрещены любые формы оскорблений, мошенничества и гриферства. Мы стремимся к тому, чтобы каждый игрок чувствовал себя здесь как дома и мог наслаждаться игрой без неприятных инцидентов. Наш Устав...</p>
+                <button id="button3" onclick="toggleText('text3', 'continuation3', 'button3')">Продолжить</button>
+            </div>
+        </section>
+        
+        <!-- Основной контейнер -->
+        <div class="main-container">
+            <!-- Содержимое основного контейнера -->
+        </div>
+
+        <!-- Дополнительные разделы -->
+        <div class="additional-section">
+            <!-- Ваш контент здесь -->
+        </div>
+        <div class="additional-section">
+            <!-- Ваш контент здесь -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MineMagic. All rights reserved.</p>
+    </footer>
+        <!-- Модальное окно для связи -->
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('contactModal')">&times;</span>
+                <img src="./image/contach.png" alt="Temporary Icon" class="modal-icon">
+                <div class="copy-container">
+                    <p>Наш Discord</p>
+                    <button class="copy-button" onclick="copyText('https://discord.gg/gsBkUndN')">Скопировать</button>
+                </div>
+            </div>
+        </div>
+    <script src="./about.js"></script>
+</body>
+</html>
